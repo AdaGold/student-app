@@ -1,4 +1,5 @@
 import "./ClassInfo.css";
+import PropTypes from "prop-types";
 
 const ClassInfo = (props) => {
   return (
@@ -10,6 +11,10 @@ const ClassInfo = (props) => {
       </ul>
     </section>
   );
+};
+
+ClassInfo.propTypes = {
+  memberCount: PropTypes.number.isRequired,
 };
 
 export default ClassInfo;
