@@ -12,7 +12,7 @@ const StudentList = (props) => {
 
   return (
     <section>
-      <h2>Student List</h2>
+      <h2 className="student-list__heading">Student List</h2>
       <ul>{studentComponents}</ul>
     </section>
   );
