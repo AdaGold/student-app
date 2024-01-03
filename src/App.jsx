@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import StudentList from './components/StudentList';
 import ClassInfo from './components/ClassInfo';
-import NewStudentForm from "./components/NewStudentForm";
+import NewStudentForm from './components/NewStudentForm';
 
 function App() {
   const [studentData, setStudentData] = useState([

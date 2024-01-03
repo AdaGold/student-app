@@ -1,10 +1,10 @@
-import { useState } from "react";
-import PropTypes from "prop-types";
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const NewStudentForm = (props) => {
   const [formFields, setFormFields] = useState({
-    name: "",
-    email: "",
+    name: '',
+    email: '',
   });
 
   const onFormSubmit = (event) => {
@@ -16,8 +16,8 @@ const NewStudentForm = (props) => {
     });
 
     setFormFields({
-      name: "",
-      email: "",
+      name: '',
+      email: '',
     });
   };
 
