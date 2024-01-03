@@ -1,5 +1,5 @@
-import Student from "./Student";
-import "./StudentList.css";
+import Student from './Student';
+import './StudentList.css';
 import PropTypes from "prop-types";
 
 const StudentList = (props) => {
