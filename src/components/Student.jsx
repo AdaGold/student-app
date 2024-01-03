@@ -1,6 +1,6 @@
 import './Student.css';
 import PropTypes from 'prop-types';
-import { useState } from "react";
+import { useState } from 'react';
 
 const Student = (props) => {
   const [isPresent, setIsPresent] = useState(false);
@@ -9,7 +9,7 @@ const Student = (props) => {
     setIsPresent(!isPresent);
   };
 
-  const nameColor = isPresent ? "green" : "red";
+  const nameColor = isPresent ? 'green' : 'red';
 
   return (
     <div>
