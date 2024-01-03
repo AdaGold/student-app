@@ -1,6 +1,6 @@
-import Student from "./Student";
-import "./StudentList.css";
-import PropTypes from "prop-types";
+import Student from './Student';
+import './StudentList.css';
+import PropTypes from 'prop-types';
 
 const StudentList = (props) => {
   const studentComponents = props.students.map(student => {
@@ -19,7 +19,7 @@ const StudentList = (props) => {
 
   return (
     <section>
-      <h2>Student List</h2>
+      <h2 className="student-list__heading">Student List</h2>
       <ul>{studentComponents}</ul>
     </section>
   );

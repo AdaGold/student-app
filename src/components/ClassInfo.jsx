@@ -1,5 +1,5 @@
-import "./ClassInfo.css";
-import PropTypes from "prop-types";
+import './ClassInfo.css';
+import PropTypes from 'prop-types';
 
 const ClassInfo = (props) => {
   return (

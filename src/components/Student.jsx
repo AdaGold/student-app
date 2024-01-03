@@ -1,5 +1,5 @@
-import "./Student.css";
-import PropTypes from "prop-types";
+import './Student.css';
+import PropTypes from 'prop-types';
 
 const Student = (props) => {
   const onAttendanceButtonClick = () => {
@@ -15,7 +15,7 @@ const Student = (props) => {
     props.onUpdate(updatedStudent);
   };
 
-  const nameColor = props.isPresent ? "green" : "red";
+  const nameColor = props.isPresent ? 'green' : 'red';
 
   return (
     <div>
