@@ -1,4 +1,4 @@
-import "./StudentList.css";
+import './StudentList.css';
 
 const StudentList = () => {
   return (
