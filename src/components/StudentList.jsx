@@ -1,5 +1,5 @@
 import Student from "./Student";
-import "./StudentList.css";
+import './StudentList.css';
 
 const StudentList = (props) => {
   const studentComponents = props.students.map((student, index) => {
