@@ -1,4 +1,4 @@
-import "./Student.css";
+import './Student.css';
 
 const Student = (props) => {
   return (

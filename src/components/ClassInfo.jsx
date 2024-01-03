@@ -1,4 +1,4 @@
-import "./ClassInfo.css";
+import './ClassInfo.css';
 
 const ClassInfo = (props) => {
   return (
