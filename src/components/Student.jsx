@@ -1,5 +1,5 @@
 import './Student.css';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Student = (props) => {
   return (
