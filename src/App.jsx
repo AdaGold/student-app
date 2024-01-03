@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import StudentList from './components/StudentList';
 import ClassInfo from './components/ClassInfo';
 
