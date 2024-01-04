@@ -3,16 +3,9 @@ import PropTypes from 'prop-types';
 
 const Student = (props) => {
   const onAttendanceButtonClick = () => {
-    const updatedStudent = {
-      id: props.id,
-      nameData: props.name,
-      emailData: props.email,
-      isPresentData: !props.isPresent,
-    };
-
-    // Invoke the function passed in through the prop named "onUpdate"
-    // This function is referenced by the name "updateStudentData" in App
-    props.onUpdate(updatedStudent);
+    // Invoke the function passed in through the prop named "onPresenceToggled"
+    // This function is referenced by the name "toggleStudentPresence" in App
+    props.onPresenceToggled(props.id);
   };
 
   const nameColor = props.isPresent ? 'green' : 'red';
@@ -35,7 +28,7 @@ Student.propTypes = {
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   isPresent: PropTypes.bool,
-  onUpdate: PropTypes.func.isRequired,
+  onPresenceToggled: PropTypes.func.isRequired,
 };
 
 export default Student;
