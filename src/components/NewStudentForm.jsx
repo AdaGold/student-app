@@ -40,6 +40,7 @@ const NewStudentForm = (props) => {
       <div>
         <label htmlFor="fullName">Name:</label>
         <input
+          id="fullName"
           name="fullName"
           value={formFields.name}
           onChange={onNameChange}
@@ -47,7 +48,12 @@ const NewStudentForm = (props) => {
       </div>
       <div>
         <label htmlFor="email">Email:</label>
-        <input name="email" value={formFields.email} onChange={onEmailChange} />
+        <input
+          id="email"
+          name="email"
+          value={formFields.email}
+          onChange={onEmailChange}
+        />
       </div>
       <input type="submit" value="Add Student" />
     </form>
