@@ -24,15 +24,24 @@ function App() {
     },
   ]);
 
-  const updateStudentData = (updatedStudent) => {
+  const toggleStudentPresence = (studentId) => {
+    // calculate the updated student data by finding the student that matches
+    // the passed id, making a copy with object spreading, then overwriting
+    // the presence value with its inverse
     const students = studentData.map((student) => {
-      if (student.id === updatedStudent.id) {
-        return updatedStudent;
+      if (student.id === studentId) {
+        // this was the toggled student, so make a new record with the updated
+        // presence value
+        return { ...student, isPresentData: !student.isPresentData };
       } else {
+        // this was not the student who was toggled, so we can use the existing
+        // data in the new student array
         return student;
       }
     });
 
+    // uses value-passing style to update the student data, but could be
+    // refactored to use function-passing style
     setStudentData(students);
   };
 
@@ -42,7 +51,7 @@ function App() {
       <ClassInfo memberCount={studentData.length}></ClassInfo>
       <StudentList
         students={studentData}
-        onUpdateStudent={updateStudentData}
+        onPresenceToggled={toggleStudentPresence}
       ></StudentList>
     </main>
   );
