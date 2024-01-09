@@ -31,7 +31,7 @@ StudentList.propTypes = {
       id: PropTypes.number.isRequired,
       nameData: PropTypes.string.isRequired,
       emailData: PropTypes.string.isRequired,
-      isPresentData: PropTypes.bool,
+      isPresentData: PropTypes.bool.isRequired,
     })
   ),
   onPresenceToggled: PropTypes.func.isRequired,
