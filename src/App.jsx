@@ -46,7 +46,7 @@ function App() {
     // calculate the updated student data by finding the student that matches
     // the passed id, making a copy with object spreading, then overwriting
     // the presence value with its inverse
-    const students = studentData.map((student) => {
+    const students = studentData.map(student => {
       if (student.id === studentId) {
         // this was the toggled student, so make a new record with the updated
         // presence value
