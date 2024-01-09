@@ -51,7 +51,7 @@ function App() {
       <ClassInfo memberCount={studentData.length}></ClassInfo>
       <StudentList
         students={studentData}
-        onPresenceToggled={toggleStudentPresence}
+        onStudentPresenceToggled={toggleStudentPresence}
       ></StudentList>
     </main>
   );
