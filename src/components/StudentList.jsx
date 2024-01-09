@@ -11,7 +11,7 @@ const StudentList = (props) => {
           name={student.nameData}
           email={student.emailData}
           isPresent={student.isPresentData}
-          onPresenceToggled={props.onStudentPresenceToggled}
+          onPresenceToggle={props.onStudentPresenceToggle}
         ></Student>
       </li>
     );
@@ -34,7 +34,7 @@ StudentList.propTypes = {
       isPresentData: PropTypes.bool.isRequired,
     })
   ),
-  onStudentPresenceToggled: PropTypes.func.isRequired,
+  onStudentPresenceToggle: PropTypes.func.isRequired,
 };
 
 export default StudentList;
