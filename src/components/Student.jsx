@@ -2,11 +2,11 @@ import './Student.css';
 import PropTypes from 'prop-types';
 
 const Student = (props) => {
-  const onAttendanceButtonClick = () => {
+  const attendanceButtonClicked = () => {
     // Invoke the function passed in through the prop named "onPresenceToggle"
-    // This function is referenced by the name "toggleStudentPresence" in App
+    // This function refers to the toggleStudentPresence function in App
     props.onPresenceToggle(props.id);
-  };
+};
 
   const nameColor = props.isPresent ? 'green' : 'red';
 
@@ -16,7 +16,7 @@ const Student = (props) => {
         <li className={nameColor}>Nickname: {props.name}</li>
         <li>Email: {props.email}</li>
       </ul>
-      <button onClick={onAttendanceButtonClick}>
+      <button onClick={attendanceButtonClicked}>
         Toggle if {props.name} is present
       </button>
     </div>
