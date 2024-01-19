@@ -26,11 +26,11 @@ function App() {
   ]);
 
   const addStudentData = (newStudent) => {
+    // Logic to generate the next valid student ID
+    const nextId = Math.max(0, ...studentData.map((student) => student.id)) + 1;
+
     // Duplicate the student list
     const newStudentList = [...studentData];
-
-    // Logic to generate the next valid student ID
-    const nextId = Math.max(...newStudentList.map((student) => student.id)) + 1;
 
     newStudentList.push({
       id: nextId,
