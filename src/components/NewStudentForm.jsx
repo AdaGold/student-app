@@ -10,7 +10,7 @@ const NewStudentForm = (props) => {
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-    props.addStudentCallback({
+    props.onStudentAdd({
       nameData: formFields.name,
       emailData: formFields.email,
     });
@@ -61,7 +61,7 @@ const NewStudentForm = (props) => {
 };
 
 NewStudentForm.propTypes = {
-  addStudentCallback: PropTypes.func.isRequired,
+  onStudentAdd: PropTypes.func.isRequired,
 };
 
 export default NewStudentForm;

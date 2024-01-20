@@ -71,7 +71,7 @@ function App() {
         students={studentData}
         onStudentPresenceToggle={toggleStudentPresence}
       ></StudentList>
-      <NewStudentForm addStudentCallback={addStudentData}></NewStudentForm>
+      <NewStudentForm onStudentAdd={addStudentData}></NewStudentForm>
     </main>
   );
 }
