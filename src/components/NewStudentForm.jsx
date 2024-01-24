@@ -7,7 +7,7 @@ const NewStudentForm = (props) => {
     email: '',
   });
 
-  const onFormSubmit = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
     props.onStudentAdd({
@@ -21,14 +21,14 @@ const NewStudentForm = (props) => {
     });
   };
 
-  const onNameChange = (event) => {
+  const handleNameChange = (event) => {
     setFormFields({
       ...formFields,
       name: event.target.value,
     });
   };
 
-  const onEmailChange = (event) => {
+  const handleEmailChange = (event) => {
     setFormFields({
       ...formFields,
       email: event.target.value,
@@ -36,14 +36,14 @@ const NewStudentForm = (props) => {
   };
 
   return (
-    <form onSubmit={onFormSubmit}>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="fullName">Name:</label>
         <input
           id="fullName"
           name="fullName"
           value={formFields.name}
-          onChange={onNameChange}
+          onChange={handleNameChange}
         />
       </div>
       <div>
@@ -52,7 +52,7 @@ const NewStudentForm = (props) => {
           id="email"
           name="email"
           value={formFields.email}
-          onChange={onEmailChange}
+          onChange={handleEmailChange}
         />
       </div>
       <input type="submit" value="Add Student" />
